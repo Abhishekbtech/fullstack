@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>login page</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-sm-6 col-md-4 mx-auto">
+                <h1 class="text-center login-title my-5">Login Page</h1>
+                <div class="account-wall">
+                    <img class="profile-img"
+                       
+                        alt="">
+                    <form class="form-signin" action="/login" method="POST">
+                        <input type="email" class="form-control" placeholder="Email" required name="email"
+                            autocomplete="off">
+                        <input type="password" class="form-control" placeholder="Password" required name="password">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">
+                            Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
